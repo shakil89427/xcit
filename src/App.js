@@ -1,7 +1,7 @@
-import Hero from "./Components/Hero";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
-  return <Hero />;
+  return <Footer />;
 }
 
 export default App;
