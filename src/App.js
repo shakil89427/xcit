@@ -1,7 +1,7 @@
-import Footer from "./Components/Footer/Footer";
+import Form from "./Components/Form/Form";
 
 function App() {
-  return <Footer />;
+  return <Form />;
 }
 
 export default App;
