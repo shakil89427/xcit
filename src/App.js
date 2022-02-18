@@ -1,7 +1,11 @@
-import Form from "./Components/Form/Form";
+import Tags from "./Components/Tags/Tags";
 
 function App() {
-  return <Form />;
+  return (
+    <div className="w-full h-screen bg-red-500 flex items-center justify-center">
+      <Tags />
+    </div>
+  );
 }
 
 export default App;
