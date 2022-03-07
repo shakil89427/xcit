@@ -12,141 +12,155 @@ import {
 } from "react-bootstrap-icons";
 
 const Contact = () => {
+  const contactStyles = {
+    header:
+      "text-white text-4xl font-bold tracking-widest relative bg-red-700 h-40 flex flex-col justify-center items-center",
+    findUs: "text-4xl font-bold text-red-600 text-center",
+    findMain: "flex flex-col md:flex-row justify-center items-center py-2",
+    findLeftDiv: "flex justify-center items-center",
+    findRightDiv: "flex justify-center items-center my-5",
+    findIcon:
+      "text-red-600 rounded-2xl w-28 h-28 flex justify-center items-center text-6xl hover:bg-red-600 hover:text-white ease-in duration-300 mx-2 cursor-pointer shadow-2xl",
+    touchMain: "bg-gray-100 p-5",
+    touchHead: "text-4xl font-bold text-gray-600 text-center",
+    touchGrid: "grid grid-cols-12 gap-4 my-5 md:px-14",
+    form: "col-span-12 md:col-span-6 bg-white text-center p-5 rounded-2xl",
+    formHead:
+      "text-xl text-red-600 font-bold my-2 border-b-2 border-red-600 w-fit block mx-auto",
+    input:
+      "w-full border-b border-gray-300 outline-0 py-3 placeholder:text-black text-red-600",
+    btn: "bg-gradient-to-r from-red-700 to-red-500 p-2 rounded-lg text-md font-medium text-white mt-5",
+    moreMain:
+      "bg-gradient-to-r from-red-700 to-red-400 col-span-12 md:col-span-6 p-5 text-white rounded-2xl",
+    moreHead:
+      "text-xl  font-bold my-2 text-center block w-fit mx-auto mb-2 border-b-2 border-white",
+    infoMain: "flex items-center mt-5",
+    infoIcon: "border-4 p-2 border-white text-3xl mr-3",
+    infoDiv: "text-gray-200",
+    infoSpan: "font-bold ml-2 text-white",
+  };
   return (
     <div>
-      <div className="py-12 bg-gradient-to-r from-red-600 to-red-300 text-white text-center">
-        <h1 className=" text-4xl tracking-widest">
-          XCITE<span className="font-bold ml-3">Contact</span>
-        </h1>
+      <div className={contactStyles.header}>
+        <h1>Stuck With Issues?</h1>
+        <h1>Here We Are</h1>
       </div>
-      <div className="px-10 p-2">
-        <h1 className="text-4xl font-bold text-red-600 text-center">
-          Find Us On
-        </h1>
-        <div className="flex flex-col md:flex-row justify-center items-center px-5 py-2">
-          <div className="flex justify-center items-center">
-            <div className="text-red-600 border-gray-200 rounded-2xl w-28 h-28 flex justify-center items-center text-6xl hover:bg-red-600 hover:text-white ease-in duration-300 mx-2 cursor-pointer shadow-lg">
+      <div>
+        <h1 className={contactStyles.findUs}>Find Us On</h1>
+        <div className={contactStyles.findMain}>
+          <div className={contactStyles.findLeftDiv}>
+            <div className={contactStyles.findIcon}>
               <Facebook />
             </div>
-            <div className="text-red-600  border-gray-200 rounded-2xl w-28 h-28 flex justify-center items-center text-6xl hover:bg-red-600 hover:text-white ease-in duration-300 mx-2 cursor-pointer shadow-lg">
+            <div className={contactStyles.findIcon}>
               <Twitter />
             </div>
-            <div className="text-red-600  border-gray-200 rounded-2xl w-28 h-28 flex justify-center items-center text-6xl hover:bg-red-600 hover:text-white ease-in duration-300  mx-2 cursor-pointer shadow-lg">
+            <div className={contactStyles.findIcon}>
               <Google />
             </div>
           </div>
-          <div className="flex justify-center items-center my-5">
-            <div className="text-red-600  border-gray-200 rounded-2xl w-28 h-28 flex justify-center items-center text-6xl hover:bg-red-600 hover:text-white ease-in duration-300  mx-2 cursor-pointer shadow-lg">
+          <div className={contactStyles.findRightDiv}>
+            <div className={contactStyles.findIcon}>
               <Behance />
             </div>
-            <div className="text-red-600  border-gray-200 rounded-2xl w-28 h-28 flex justify-center items-center text-6xl hover:bg-red-600 hover:text-white ease-in duration-300  mx-2 cursor-pointer shadow-lg">
+            <div className={contactStyles.findIcon}>
               <Instagram />
             </div>
-            <div className="text-red-600  border-gray-200 rounded-2xl w-28 h-28 flex justify-center items-center text-6xl hover:bg-red-600 hover:text-white ease-in duration-300  mx-2 cursor-pointer shadow-lg">
+            <div className={contactStyles.findIcon}>
               <Dribbble />
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-gray-100 p-5">
-        <h1 className="text-4xl font-bold text-gray-600 text-center">
-          Get In Touch
-        </h1>
-        <div className="grid grid-cols-12 my-5 md:px-14">
-          <div className="col-span-12 md:col-span-6 bg-white text-center p-5">
-            <h6 className="text-xl text-red-600 font-bold my-2 border-b-2 border-red-600 w-fit block mx-auto">
-              Send Message
-            </h6>
+      <div className={contactStyles.touchMain}>
+        <h1 className={contactStyles.touchHead}>Get In Touch</h1>
+        <div className={contactStyles.touchGrid}>
+          <div className={contactStyles.form}>
+            <h6 className={contactStyles.formHead}>Send Message</h6>
             <form action="#">
               <input
                 placeholder="Your Name"
-                className="w-full border-b border-gray-300 outline-0 py-3 placeholder:text-red-600 text-red-600"
+                className={contactStyles.input}
                 type="text"
               />
               <input
                 placeholder="Your Email"
-                className="w-full border-b border-gray-300 outline-0 py-3 placeholder:text-red-600 text-red-600"
+                className={contactStyles.input}
                 type="email"
               />
               <input
                 placeholder="Your Number"
-                className="w-full border-b border-gray-300 outline-0 py-3 placeholder:text-red-600 text-red-600"
+                className={contactStyles.input}
                 type="number"
               />
 
               <textarea
                 placeholder="Your Message"
-                className="w-full border-b border-gray-300 outline-0 py-3 placeholder:text-red-600 text-red-600"
+                className={contactStyles.input}
                 rows="5"
               ></textarea>
-              <button className="bg-gradient-to-r from-red-700 to-red-400 p-2 rounded-lg text-md font-medium text-white mt-5">
-                Send Message
-              </button>
+              <button className={contactStyles.btn}>Send Message</button>
             </form>
           </div>
-          <div className="bg-gradient-to-r from-red-700 to-red-400 col-span-12 md:col-span-6 p-5 text-white">
-            <h6 className="text-xl  font-bold my-2 text-center block w-fit mx-auto mb-2 border-b-2 border-white">
-              Find Out More
-            </h6>
+          <div className={contactStyles.moreMain}>
+            <h6 className={contactStyles.moreHead}>Find Out More</h6>
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
               nonummy nibh euismod tincidunt ut laoreet ipsum dolor sit amet,
               consectetuer adipiscing elit.
             </p>
-            <div className="flex items-center mt-5">
-              <div className="border-4 p-2 border-white text-3xl mr-3">
+            <div className={contactStyles.infoMain}>
+              <div className={contactStyles.infoIcon}>
                 <GeoAlt />
               </div>
-              <div className="text-gray-200">
+              <div className={contactStyles.infoDiv}>
                 <h3>
                   Primary:
-                  <span className="font-bold ml-2 text-white">
+                  <span className={contactStyles.infoSpan}>
                     Last Vegas, 120 Graphic Street, US
                   </span>
                 </h3>
                 <h3>
                   Second:
-                  <span className="font-bold ml-2 text-white">
+                  <span className={contactStyles.infoSpan}>
                     Califorinia, 88 Design Street, US
                   </span>
                 </h3>
               </div>
             </div>
-            <div className="flex items-center mt-5">
-              <div className="border-4 p-2 border-white text-3xl mr-3">
+            <div className={contactStyles.infoMain}>
+              <div className={contactStyles.infoIcon}>
                 <Telephone />
               </div>
-              <div className="text-gray-200">
+              <div className={contactStyles.infoDiv}>
                 <h3>
                   Primary:
-                  <span className="font-bold ml-2 text-white">
+                  <span className={contactStyles.infoSpan}>
                     (100) 3434 55666
                   </span>
                 </h3>
                 <h3>
                   Second:
-                  <span className="font-bold ml-2 text-white">
+                  <span className={contactStyles.infoSpan}>
                     (20) 323 434 1323
                   </span>
                 </h3>
               </div>
             </div>
-            <div className="flex items-center mt-5">
-              <div className="border-4 p-2 border-white text-3xl mr-3">
+            <div className={contactStyles.infoMain}>
+              <div className={contactStyles.infoIcon}>
                 <Envelope />
               </div>
-              <div className="text-gray-200">
+              <div className={contactStyles.infoDiv}>
                 <h3>
                   Primary:
-                  <span className="font-bold ml-2 text-white">
+                  <span className={contactStyles.infoSpan}>
                     info@xciteedu.com
                   </span>
                 </h3>
                 <h3>
                   Second:
-                  <span className="font-bold ml-2 text-white">
-                    mail@mail.com
-                  </span>
+                  <span className={contactStyles.infoSpan}>mail@mail.com</span>
                 </h3>
               </div>
             </div>
