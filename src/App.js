@@ -1,10 +1,10 @@
 import React from "react";
-import Contact from "./Components/Contact/Contact";
+import About from "./Components/About/About";
 
 function App() {
   return (
     <div>
-      <Contact />
+      <About />
     </div>
   );
 }
